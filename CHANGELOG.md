@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/huunghiaish/react-vite-boilerplate/compare/v1.0.0...v1.1.0) (2024-12-07)
+
+
+### Features
+
+* add vitest and husky ([055e42b](https://github.com/huunghiaish/react-vite-boilerplate/commit/055e42b70d064d0931f62abd7ecdb102e99db32b))
+
 ## [1.0.0](https://github.com/huunghiaish/react-vite-boilerplate/compare/v0.0.1...v1.0.0) (2024-12-07)
 
 ### 0.0.1 (2024-12-07)
