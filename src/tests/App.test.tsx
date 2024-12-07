@@ -1,14 +1,19 @@
+// src/tests/App.test.tsx
+import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('renders Vite + React + Tailwindcss heading', () => {
-  render(<App />);
-  const headingElement = screen.getByText(/Vite \+ React \+ Tailwindcss/i);
-  expect(headingElement).toBeInTheDocument();
+describe('App', () => {
+  it('renders Vite + React + Tailwindcss heading', () => {
+    render(<App />);
+    const heading = screen.getByText(/Vite \+ React \+ Tailwindcss/i);
+    expect(heading).toBeInTheDocument();
+  });
+
+  it('renders count button', () => {
+    render(<App />);
+    const button = screen.getByRole('button', { name: /count/i });
+    expect(button).toBeInTheDocument();
+  });
 });
 
-test('renders count button', () => {
-  render(<App />);
-  const buttonElement = screen.getByText(/count is/i);
-  expect(buttonElement).toBeInTheDocument();
-});
