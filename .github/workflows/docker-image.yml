@@ -37,6 +37,6 @@ jobs:
     - name: Docker Metadata
       uses: docker/metadata-action@v3
       with:
-        images: huunghiaish/devops-zero-demo
+        images: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.REPO_NAME }}
         tags: type=ref,event=branch
         github-token: ${{ secrets.GITHUB_TOKEN }}
